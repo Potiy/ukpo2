@@ -31,4 +31,4 @@ build: false  # Not a C# project, build stuff at the test step instead.
 
 test_script:
   # Run the project tests (don't do examples because they are too slow)
-  - "py.test -s guitest.py"
+  - "py.test -s test.py"
