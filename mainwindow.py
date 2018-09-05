@@ -20,7 +20,7 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
             self.plainTextEdit_2.clear()
             self.plainTextEdit_2.insertPlainText("введите строку")
             return
-        for i in "!\"'()*,-./:;?@[\\]_{|}~":#clear from symbols
+        for i in "!\"'()*,-./:;?@[\\]_{|}~":
             input_str = input_str.replace(i,'')
         input_str = input_str.lower()
         words_mass = [x for x in input_str.split(' ') if x]#разб и изб от пробелов
