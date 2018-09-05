@@ -31,7 +31,7 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
                 glue = ' '.join(words_mass[k:k+i+1])
                 p = 0#wtf
                 count = 0
-                while input_str.find(glue, p) != -1: #найдено что-то 
+                while input_str.find(glue, p) != -1:
                     count += 1
                     p = input_str.find(glue, p) + len(glue)
                 if count > 1:
