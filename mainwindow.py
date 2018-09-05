@@ -1,6 +1,5 @@
-from PyQt4 import QtCore, QtGui
+﻿from PyQt4 import QtCore, QtGui
 from lab5_ui import Ui_MainWindow
-
 
 class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
     def __init__(self): #конструктор класса
@@ -14,7 +13,7 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
         self.plainTextEdit.clear()
         self.plainTextEdit_2.clear()
 
-    def f_1(self): #через селф передается ссыль на объект этого класса 
+    def f_1(self): 
         dictionary = {} #map
         input_str = self.plainTextEdit.toPlainText()
         if not input_str:
