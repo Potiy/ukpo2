@@ -28,8 +28,8 @@ def test_basic_widget(qtbot): #автоматич. созд. объект с н�
     assert window.plainTextEdit.toPlainText() == ''
     qtbot.wait(2000)
     window.plainTextEdit.clear()
-    #window.plainTextEdit_2.clear()
+    window.plainTextEdit_2.clear()
     qtbot.mouseMove(window.pushButton)
     qtbot.mouseClick(window.pushButton,QtCore.Qt.LeftButton)
-    assert window.plainTextEdit_2.toPlainText() == 'введите строку'
+    assert window.plainTextEdit_2.toPlainText() == 'Enter the text'
     qtbot.wait(2000)
