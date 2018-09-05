@@ -20,10 +20,15 @@ def test_basic_widget(qtbot): #автоматич. созд. объект с н�
     qtbot.wait(150)
     qtbot.mouseMove(window.plainTextEdit_2)
     assert window.plainTextEdit_2.toPlainText() == "a b c: 2;"
-    qtbot.wait(2000)
+    qtbot.wait(500)
+    qtbot.mouseMove(window.plainTextEdit_2)
+    window.plainTextEdit_2.toPlainText() == 'ссссс'
+    qtbot.wait(500)
+    assert window.plainTextEdit_2.toPlainText() == "a b c: 2;"
+    qtbot.wait(500)
     qtbot.mouseMove(window.pushButton_2)
     qtbot.mouseClick(window.pushButton_2, QtCore.Qt.LeftButton)
-    qtbot.wait(150)
+    qtbot.wait(500)
     qtbot.mouseMove(window.plainTextEdit)
     assert window.plainTextEdit.toPlainText() == ''
     qtbot.wait(2000)
@@ -33,3 +38,6 @@ def test_basic_widget(qtbot): #автоматич. созд. объект с н�
     qtbot.mouseClick(window.pushButton,QtCore.Qt.LeftButton)
     assert window.plainTextEdit_2.toPlainText() == 'Enter the text'
     qtbot.wait(2000)
+
+
+

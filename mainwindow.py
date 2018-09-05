@@ -13,11 +13,13 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
         self.pushButton.setToolTip('Count repeated strings')
         self.pushButton_3.clicked.connect(self.ext)
         self.pushButton.clicked.connect(self.f_1)
-        self.pushButton_5.clicked.connect(self.file)
+        self.pushButton_5.clicked.connect(self.fileMy)
+        self.filedialog = QtGui.QFileDialog()
 
-    def file (self):
 
-        pr=QtGui.QFileDialog.getOpenFileName()
+    def fileMy (self):
+      
+        pr=self.filedialog.getOpenFileName(directory="text.txt")
         self.plainTextEdit.setPlainText(open(pr).read())
         
     def clr(self):
