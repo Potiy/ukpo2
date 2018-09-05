@@ -13,7 +13,6 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
         self.pushButton.setToolTip('Count repeated strings')
         self.pushButton_3.clicked.connect(self.ext)
         self.pushButton.clicked.connect(self.f_1)
-        self.pushButton_4.clicked.connect(self.showDialog)
         self.pushButton_5.clicked.connect(self.file)
 
     def file (self):
@@ -24,14 +23,6 @@ class mainwindow (QtGui.QMainWindow, Ui_MainWindow):
     def clr(self):
         self.plainTextEdit.clear()
         self.plainTextEdit_2.clear()
-
-    def showDialog(self):
-        color = QtGui.QColorDialog.getColor()
-   
-        self.setStyleSheet("QWidget { background-color: %s }"
-            % color.name())
-
-
 
     def ext(self, event):
         

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Ekaterina_Ren\Desktop\u3\lab5.ui'
+# Form implementation generated from reading ui file 'C:\Users\Ekaterina_Ren\Documents\GitHub\ukpo2\lab5.ui'
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
@@ -59,9 +59,6 @@ class Ui_MainWindow(object):
         self.pushButton_5 = QtGui.QPushButton(self.layoutWidget)
         self.pushButton_5.setObjectName(_fromUtf8("pushButton_5"))
         self.horizontalLayout.addWidget(self.pushButton_5)
-        self.pushButton_4 = QtGui.QPushButton(self.layoutWidget)
-        self.pushButton_4.setObjectName(_fromUtf8("pushButton_4"))
-        self.horizontalLayout.addWidget(self.pushButton_4)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 542, 21))
@@ -80,5 +77,4 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Clear", None))
         self.pushButton_3.setText(_translate("MainWindow", "Quit", None))
         self.pushButton_5.setText(_translate("MainWindow", "File", None))
-        self.pushButton_4.setText(_translate("MainWindow", "ChangeColor", None))
 
